@@ -980,6 +980,7 @@ impl LayoutThread {
                 webrender_traits::Epoch(epoch_number),
                 viewport_size,
                 builder);
+            self.webrender_api.generate_frame();
         });
     }
 
